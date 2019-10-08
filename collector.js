@@ -21,7 +21,7 @@
     )
     // ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     var data = option.data ? option.data : {}
-    data.token = 'F0F3854D68D9773D774E9FAD166A4D73' // 设置固定token
+    data.token = '' // 设置固定token
     ajax.send(JSON.stringify(data))
     ajax.onreadystatechange = function() {
       if (ajax.readyState === 4) {
@@ -270,7 +270,7 @@
   // 设置monitorProperty点击次数或者是请求一次接口
   eventMonitor.setClickNum = function() {
     ajax({
-      url: 'http://114.112.101.158:9995/authc/login',
+      url: '',
       data: {
         loginName: '',
         password: ''
